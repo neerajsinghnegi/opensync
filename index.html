@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Opsync Tech - Professional DevOps & Cloud Consultancy for Modern Infrastructure Solutions.">
+  <title>Opsync Tech | DevOps & Cloud Consulting Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --aws-orange: #FF9900;
+      --aws-dark-gray: #232F3E;
+      --aws-light-gray: #F2F4F7;
+      --text-color: #1e293b;
+      --muted-text: #64748b;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--aws-light-gray);
+      color: var(--text-color);
+    }
+    header, footer {
+      background-color: var(--aws-dark-gray);
+      color: white;
+      padding: 1.5em 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 4em 2em;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--aws-light-gray);
+      padding: 5em 2em;
+    }
+    .hero-text {
+      max-width: 55%;
+    }
+    .hero-text h1 {
+      font-size: 3em;
+      color: var(--aws-dark-gray);
+      margin-bottom: 0.3em;
+    }
+    .hero-text p {
+      font-size: 1.2em;
+      color: var(--muted-text);
+    }
+    .hero img {
+      max-width: 40%;
+      border-radius: 12px;
+    }
+    h2 {
+      font-size: 2.5em;
+      color: var(--aws-orange);
+      margin-bottom: 1em;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+    }
+    .services li {
+      background: white;
+      padding: 2em;
+      border-left: 6px solid var(--aws-orange);
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .services li:hover {
+      transform: scale(1.02);
+    }
+    .services li strong {
+      font-size: 1.3em;
+      color: var(--text-color);
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    .cta {
+      background: linear-gradient(to right, var(--aws-orange), var(--aws-dark-gray));
+      color: white;
+      text-align: center;
+      padding: 4em 2em;
+      border-radius: 8px;
+      margin: 3em auto;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 1em;
+      background: white;
+      color: var(--aws-orange);
+      padding: 0.8em 2em;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .cta a:hover {
+      background: #e2e8f0;
+    }
+    a {
+      color: var(--aws-orange);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Opsync Tech</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Schedule Your Free DevOps Strategy Call</h2>
+      <p>Take the first step toward high-performing cloud infrastructure and automation with Opsync Tech.</p>
+      <a href="mailto:support@opsync.tech">Book a Call</a>
+    </div>
+  </section>
+
+  <section class="hero" id="home">
+    <div class="container hero-text">
+      <h1>DevOps Excellence. Delivered.</h1>
+      <p>From automation to scaling infrastructure, Opsync Tech empowers engineering teams to innovate, deploy, and thrive in the cloud.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1633356122544-b7a44f2e8363?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DevOps teamwork illustration">
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Opsync Tech</h2>
+      <p>Opsync Tech is a DevOps and Cloud consultancy focused on delivering scalable, secure, and high-performance infrastructure solutions. We work with fast-growing startups and established enterprises to accelerate deployment cycles, implement automation strategies, and enable continuous delivery.</p>
+      <p>Whether you need container orchestration, CI/CD pipelines, site reliability engineering, or cloud-native architecture—we bring deep industry experience and certified expertise to every engagement.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Core Services</h2>
+      <ul>
+        <li>
+          <strong>DevOps Consulting</strong>
+          Strategic guidance to align engineering practices with business outcomes through DevOps transformation.
+        </li>
+        <li>
+          <strong>Cloud Architecture & Automation</strong>
+          Design and implement secure, resilient, and scalable cloud infrastructure with automation at its core.
+        </li>
+        <li>
+          <strong>Kubernetes Implementation</strong>
+          Deploy, manage, and monitor cloud-native applications using Kubernetes and containerized environments.
+        </li>
+        <li>
+          <strong>CI/CD Pipeline Setup</strong>
+          Build efficient delivery workflows with integrated testing, observability, and rollback capabilities.
+        </li>
+        <li>
+          <strong>Site Reliability Engineering</strong>
+          Enhance system reliability through monitoring, alerting, and performance optimization.
+        </li>
+        <li>
+          <strong>Infrastructure as Code (IaC)</strong>
+          Automate your infrastructure lifecycle using tools like Terraform, Ansible, and CloudFormation.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to collaborate? Reach out today.</p>
+      <p>Email: <a href="mailto:support@opsync.tech">support@opsync.tech</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vardans6/" target="_blank">Connect with us on LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Opsync Tech. Professional DevOps & Cloud Solutions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
